@@ -11,6 +11,31 @@ import jackImg from '../assets/characters/jack-baker.png'
 import dimitrescuImg from '../assets/characters/dimitrescu.png'
 import tyrantImg from '../assets/characters/tyrant.png'
 import mrXImg from '../assets/characters/mr-x-coat.jpg'
+import barryImg from '../assets/characters/barry-burton.png'
+import rebeccaImg from '../assets/characters/rebecca-chambers.png'
+import claireImg from '../assets/characters/claire-redfield.png'
+import adaImg from '../assets/characters/ada-wong.png'
+import sherryImg from '../assets/characters/sherry-birkin.png'
+import carlosImg from '../assets/characters/carlos-oliveira.png'
+import mikhailImg from '../assets/characters/mikhail-victor.png'
+import nicholaiImg from '../assets/characters/nicholai-ginovaef.png'
+import ashleyImg from '../assets/characters/ashley-graham.png'
+import krauserImg from '../assets/characters/jack-krauser.png'
+import salazarImg from '../assets/characters/ramon-salazar.png'
+import shevaImg from '../assets/characters/sheva-alomar.png'
+import excellaImg from '../assets/characters/excella-gionne.png'
+import helenaImg from '../assets/characters/helena-harper.png'
+import piersImg from '../assets/characters/piers-nivans.png'
+import jakeImg from '../assets/characters/jake-muller.png'
+import miaImg from '../assets/characters/mia-winters.png'
+import margueriteImg from '../assets/characters/marguerite-baker.png'
+import lucasImg from '../assets/characters/lucas-baker.png'
+import evelineImg from '../assets/characters/eveline.png'
+import heisenbergImg from '../assets/characters/karl-heisenberg.png'
+import mirandaImg from '../assets/characters/mother-miranda.png'
+import roseImg from '../assets/characters/rose-winters.png'
+import moreauImg from '../assets/characters/salvatore-moreau.png'
+import benevientoImg from '../assets/characters/donna-beneviento.png'
 import logoRe1 from '../assets/logos/re1.png'
 import logoRe2 from '../assets/logos/re2.png'
 import logoRe3 from '../assets/logos/re3.png'
@@ -88,6 +113,24 @@ export const games: Game[] = [
           'Agente da S.T.A.R.S. especialista em explosivos e lockpicking, parceira de Chris.',
       },
       {
+        name: 'Barry Burton',
+        image: barryImg,
+        description:
+          'Veterano da S.T.A.R.S. e braço direito de Wesker, leal a Chris e Jill.',
+      },
+      {
+        name: 'Rebecca Chambers',
+        image: rebeccaImg,
+        description:
+          'Médica e jovem integrante da Bravo Team, presa na mansão desde o início.',
+      },
+      {
+        name: 'Albert Wesker',
+        image: weskerImg,
+        description:
+          'Comandante da Alpha Team, finge liderar a missão enquanto esconde laços com a Umbrella.',
+      },
+      {
         name: 'Tyrant',
         image: tyrantImg,
         description:
@@ -117,6 +160,24 @@ export const games: Game[] = [
         image: leonImg,
         description:
           'Policial novato que se vê no centro do desastre biológico de Raccoon City.',
+      },
+      {
+        name: 'Claire Redfield',
+        image: claireImg,
+        description:
+          'Irmã de Chris, que chega a Raccoon City atrás de notícias do irmão desaparecido.',
+      },
+      {
+        name: 'Ada Wong',
+        image: adaImg,
+        description:
+          'Agente misteriosa com interesses próprios, cruzando o caminho de Leon e Claire.',
+      },
+      {
+        name: 'Sherry Birkin',
+        image: sherryImg,
+        description:
+          'Filha do cientista Birkin, criança perdida no caos e caçada pela Umbrella.',
       },
       {
         name: 'Mr. X',
@@ -156,6 +217,30 @@ export const games: Game[] = [
           'Veterana da S.T.A.R.S. que luta para sobreviver à caçada do Nemesis.',
       },
       {
+        name: 'Carlos Oliveira',
+        image: carlosImg,
+        description:
+          'Jovem mercenário da U.B.C.S. que se alia a Jill durante a destruição da cidade.',
+      },
+      {
+        name: 'Mikhail Viktor',
+        image: mikhailImg,
+        description:
+          'Veterano da U.B.C.S. que se sacrifica para proteger os sobreviventes.',
+      },
+      {
+        name: 'Nicholai Ginovaef',
+        image: nicholaiImg,
+        description:
+          'Mercenário sem escrúpulos da U.B.C.S., mais interessado em lucrar com o caos.',
+      },
+      {
+        name: 'Chris Redfield',
+        image: chrisImg,
+        description:
+          'Só aparece no epílogo: deixou Raccoon City, mas deixa um recado para Jill.',
+      },
+      {
         name: 'Nemesis',
         image: nemesisImg,
         description:
@@ -187,6 +272,30 @@ export const games: Game[] = [
           'Agente do governo americano em uma missão de resgate na Espanha rural.',
       },
       {
+        name: 'Ashley Graham',
+        image: ashleyImg,
+        description:
+          'Filha do presidente dos Estados Unidos, sequestrada pela seita Los Iluminados.',
+      },
+      {
+        name: 'Ada Wong',
+        image: adaImg,
+        description:
+          'Agente encoberta que persegue o G-Vírus e se cruza com Leon na missão.',
+      },
+      {
+        name: 'Jack Krauser',
+        image: krauserImg,
+        description:
+          'Ex-agente do governo e antigo parceiro de Leon, agora a serviço dos Illuminados.',
+      },
+      {
+        name: 'Ramon Salazar',
+        image: salazarImg,
+        description:
+          'Senhor feudal e castelão que protege Saddler e sela o castelo com Plagas.',
+      },
+      {
         name: 'Osmund Saddler',
         image: saddlerImg,
         description:
@@ -216,6 +325,24 @@ export const games: Game[] = [
         image: chrisImg,
         description:
           'Veterano da S.T.A.R.S. agora na B.S.A.V., enfrentando o passado em terras africanas.',
+      },
+      {
+        name: 'Sheva Alomar',
+        image: shevaImg,
+        description:
+          'Agente da B.S.A.V. nativa da região, parceira de Chris na investigação.',
+      },
+      {
+        name: 'Jill Valentine',
+        image: jillImg,
+        description:
+          'Dada como morta, reaparece sob controle mental de Wesker antes de ser resgatada.',
+      },
+      {
+        name: 'Excella Gionne',
+        image: excellaImg,
+        description:
+          'Diretora da Tricell na Ácia e aliada de Wesker no projeto Uroboros.',
       },
       {
         name: 'Albert Wesker',
@@ -255,6 +382,36 @@ export const games: Game[] = [
           'Agente caçando os responsáveis pelo ataque biológico em China.',
       },
       {
+        name: 'Helena Harper',
+        image: helenaImg,
+        description:
+          'Agente do governo que guia Leon e carrega um segredo ligado ao C-Vírus.',
+      },
+      {
+        name: 'Piers Nivans',
+        image: piersImg,
+        description:
+          'Atirador de elite da B.S.A.V. e parceiro leal de Chris na campanha chinesa.',
+      },
+      {
+        name: 'Jake Muller',
+        image: jakeImg,
+        description:
+          'Mercenário que descobre laços inesperados com o passado da Umbrella.',
+      },
+      {
+        name: 'Sherry Birkin',
+        image: sherryImg,
+        description:
+          'Agente de campo que acompanha Jake e enfrenta o C-Vírus de frente.',
+      },
+      {
+        name: 'Ada Wong',
+        image: adaImg,
+        description:
+          'Espionagem com objetivos próprios, perseguindo a verdade por trás da conspiração.',
+      },
+      {
         name: 'Derek Simmons',
         image: simmonsImg,
         description:
@@ -286,6 +443,30 @@ export const games: Game[] = [
           'Homem comum disposto a atravessar o inferno para resgatar sua esposa.',
       },
       {
+        name: 'Mia Winters',
+        image: miaImg,
+        description:
+          'Esposa de Ethan, desaparecida há anos e ligada ao projeto Eveline.',
+      },
+      {
+        name: 'Marguerite Baker',
+        image: margueriteImg,
+        description:
+          'Matriarca da família Baker, presa ao cultivo e ao poder do Mold.',
+      },
+      {
+        name: 'Lucas Baker',
+        image: lucasImg,
+        description:
+          'Filho caçula dos Baker, obcecado por armadilhas e trapaças.',
+      },
+      {
+        name: 'Eveline',
+        image: evelineImg,
+        description:
+          'Bioarma em forma de garota, capaz de infectar pessoas remotamente com o Mold.',
+      },
+      {
         name: 'Jack Baker',
         image: jackImg,
         description:
@@ -315,6 +496,48 @@ export const games: Game[] = [
         image: ethanImg,
         description:
           'Pai disposto a sacrificar tudo para recuperar sua filha Rose.',
+      },
+      {
+        name: 'Rose Winters',
+        image: roseImg,
+        description:
+          'Filha de Ethan e Mia, chave para o poder do Megamycete e centro da caçada.',
+      },
+      {
+        name: 'Mia Winters',
+        image: miaImg,
+        description:
+          'Esposa de Ethan, cujo passado como agente emerge ao longo da história.',
+      },
+      {
+        name: 'Chris Redfield',
+        image: chrisImg,
+        description:
+          'Invade a casa dos Winters e rouba Rose, motivos que só se revelam depois.',
+      },
+      {
+        name: 'Mother Miranda',
+        image: mirandaImg,
+        description:
+          'Matriarca da vila e senhora do Megamycete, atrás de Rose desde o início.',
+      },
+      {
+        name: 'Karl Heisenberg',
+        image: heisenbergImg,
+        description:
+          'Um dos quatro lordes, senhor da fundição e do magnetismo.',
+      },
+      {
+        name: 'Salvatore Moreau',
+        image: moreauImg,
+        description:
+          'Lorde da represa e das criaturas aquáticas, deformado pelo Megamycete.',
+      },
+      {
+        name: 'Donna Beneviento',
+        image: benevientoImg,
+        description:
+          'Lorde da floresta, mestra de bonecas e alucinações de pesadelo.',
       },
       {
         name: 'Alcina Dimitrescu',
