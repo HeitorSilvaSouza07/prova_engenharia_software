@@ -1,12 +1,12 @@
-Resident Evil Hub
+# Resident Evil Hub
 Aplicação web desenvolvida para reunir informações sobre os jogos da franquia Resident Evil em um único lugar.
 
 O projeto apresenta um catálogo dos jogos, com imagens, informações sobre lançamento, plataformas, notas do Metacritic e links relacionados aos títulos. A proposta é proporcionar uma experiência simples e organizada para que os usuários possam conhecer, pesquisar e comparar diferentes jogos da franquia.
 
-Objetivo
+##Objetivo
 Criar um catálogo interativo da franquia Resident Evil, centralizando informações que normalmente estão distribuídas em diferentes plataformas.
 
-Principais funcionalidades
+##Principais funcionalidades
 Catálogo dos jogos Resident Evil
 
 Imagens e informações dos títulos
