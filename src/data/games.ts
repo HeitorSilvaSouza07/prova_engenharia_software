@@ -59,9 +59,7 @@ export interface Game {
   logo: string
   genre: string
   developer: string
-  protagonist: Character
   cast: Character[]
-  pursuers: Character[]
   history: string[]
   scenes: string[]
 }
@@ -74,18 +72,26 @@ export const games: Game[] = [
     year: 1996,
     tagline: 'A Mansão Spencer',
     logo: logoRe1,
-    protagonist: {
-      name: 'Chris Redfield',
-      image: chrisImg,
-      description:
-        'Agente da S.T.A.R.S. enviado para investigar os crimes bizarros nos arredores de Raccoon City.',
-    },
-    pursuers: [
+    genre: 'Survival Horror',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Chris Redfield',
+        image: chrisImg,
+        description:
+          'Agente da S.T.A.R.S. da Alpha Team, determinado a desvendar o mistério da mansão.',
+      },
+      {
+        name: 'Jill Valentine',
+        image: jillImg,
+        description:
+          'Agente da S.T.A.R.S. especialista em explosivos e lockpicking, parceira de Chris.',
+      },
       {
         name: 'Tyrant',
         image: tyrantImg,
         description:
-          'Primeiro protótipo de bioweapon da Umbrella, criado a partir do T-Vírus nos laboratórios da mansão.',
+          'Primeiro protótipo de bioweapon da Umbrella, criado a partir do T-Vírus.',
       },
     ],
     history: [
@@ -94,6 +100,7 @@ export const games: Game[] = [
       'Dentro da mansão, Chris e Jill descobrem que o lugar esconde os laboratórios secretos da Umbrella Corporation, responsável pela criação do vírus T (T-Vírus), usado em experimentos de armas biológicas. As salas da mansão estão repletas de monstros — desde tubarões geneticamente modificados até o Tyrant, o primeiro protótipo de bioweapon da corporação.',
       'Após enfrentar horrores e desvendar os segredos da Umbrella, os sobreviventes conseguem escapar da mansão em um helicóptero. Mas a verdade sobre a corporação e os perigos do vírus T mal começam a se revelar.',
     ],
+    scenes: [re1Scene1, re1Scene2, re1Scene3],
   },
   {
     slug: 're2',
@@ -102,24 +109,26 @@ export const games: Game[] = [
     year: 1998,
     tagline: 'A Queda de Raccoon City',
     logo: logoRe2,
-    protagonist: {
-      name: 'Leon S. Kennedy',
-      image: leonImg,
-      description:
-        'Policial novato no seu primeiro dia de trabalho, preso ao caos que tomou Raccoon City.',
-    },
-    pursuers: [
+    genre: 'Survival Horror',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Leon S. Kennedy',
+        image: leonImg,
+        description:
+          'Policial novato que se vê no centro do desastre biológico de Raccoon City.',
+      },
       {
         name: 'Mr. X',
         image: mrXImg,
         description:
-          'Tyrant T-103 de terno e chapéu, enviado pela Umbrella para eliminar todas as testemunhas.',
+          'Tyrant T-103 de terno e chapéu, enviado pela Umbrella para eliminar testemunhas.',
       },
       {
         name: 'William Birkin',
         image: birkinImg,
         description:
-          'Cientista da Umbrella que desenvolveu o G-Vírus e, ferido, se injeta com ele e se transforma em monstro.',
+          'Cientista da Umbrella que desenvolveu o G-Vírus e se transforma em monstro.',
       },
     ],
     history: [
@@ -128,6 +137,7 @@ export const games: Game[] = [
       'Para eliminá-los, a Umbrella envia o Mr. X — um Tyrant T-103 de terno e chapéu — que persegue Leon e Claire pela delegacia e pelos laboratórios. Ao mesmo tempo, eles descobrem a conspiração corporativa e reencontram William Birkin, o cientista que desenvolveu o G-Vírus. Birkin, gravemente ferido, se injeta com o vírus e se transforma em um monstro mutante.',
       'No final, Leon e Claire conseguem escapar de Raccoon City, mas a cidade é completamente destruída por um míssil lançado pelo governo para conter o desastre — apagando, na tentativa, todo rastro do que aconteceu ali.',
     ],
+    scenes: [re2Scene1, re2Scene2, re2Scene3],
   },
   {
     slug: 're3',
@@ -136,18 +146,20 @@ export const games: Game[] = [
     year: 1999,
     tagline: 'A Caçada do Nemesis',
     logo: logoRe3,
-    protagonist: {
-      name: 'Jill Valentine',
-      image: jillImg,
-      description:
-        'Agente da S.T.A.R.S. que decide ficar em Raccoon City para investigar a Umbrella e fica presa no surto.',
-    },
-    pursuers: [
+    genre: 'Survival Horror',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Jill Valentine',
+        image: jillImg,
+        description:
+          'Veterana da S.T.A.R.S. que luta para sobreviver à caçada do Nemesis.',
+      },
       {
         name: 'Nemesis',
         image: nemesisImg,
         description:
-          'Tyrant modificado, mais forte e inteligente, criado pela Umbrella para eliminar os membros da S.T.A.R.S.',
+          'Tyrant modificado com o parasita NE-α, criado para eliminar os membros da S.T.A.R.S.',
       },
     ],
     history: [
@@ -156,6 +168,7 @@ export const games: Game[] = [
       'Durante a fuga, Jill se alia a Carlos Oliveira, um jovem mercenário da Umbrella, e juntos enfrentam a destruição de Raccoon City. A dupla sobrevive a emboscadas, laboratórios em ruínas e confrontos diretos com o Nemesis.',
       'No desfecho, Jill derrota o Nemesis em uma batalha final e escapa de Raccoon City momentos antes que a cidade seja varrida por um míssil — encerrando de vez o capítulo mais sombrio da história da cidade.',
     ],
+    scenes: [re3Scene1, re3Scene2, re3Scene3],
   },
   {
     slug: 're4',
@@ -164,18 +177,20 @@ export const games: Game[] = [
     year: 2005,
     tagline: 'A Missão na Espanha',
     logo: logoRe4,
-    protagonist: {
-      name: 'Leon S. Kennedy',
-      image: leonImg,
-      description:
-        'Agente do governo americano encarregado de resgatar Ashley Graham, filha do presidente, sequestrada na Espanha.',
-    },
-    pursuers: [
+    genre: 'Survival Horror / Ação',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Leon S. Kennedy',
+        image: leonImg,
+        description:
+          'Agente do governo americano em uma missão de resgate na Espanha rural.',
+      },
       {
         name: 'Osmund Saddler',
         image: saddlerImg,
         description:
-          'Líder da seita Los Iluminados, que domina os aldeões com o parasita ancestral Plaga.',
+          'Líder da seita Los Iluminados, que domina os aldeões com o parasita Plaga.',
       },
     ],
     history: [
@@ -184,6 +199,7 @@ export const games: Game[] = [
       'Durante a investigação, Leon é infectado pelo Plaga e conta com a ajuda de Luis Sera, um ex-pesquisador da Umbrella, e de Ada Wong, uma misteriosa agente com interesses próprios.',
       'Após enfrentar Saddler e salvar Ashley, Leon escapa com a presidente e cumpre sua missão — mas o mundo agora sabe que bioarmas muito mais antigas e perigosas que os vírus da Umbrella existem.',
     ],
+    scenes: [re4Scene1, re4Scene2, re4Scene3],
   },
   {
     slug: 're5',
@@ -192,18 +208,20 @@ export const games: Game[] = [
     year: 2009,
     tagline: 'O Protocolo Uroboros',
     logo: logoRe5,
-    protagonist: {
-      name: 'Chris Redfield',
-      image: chrisImg,
-      description:
-        'Agente da B.S.A.V. investigando o tráfico ilegal de armas biológicas em uma vila remota na África.',
-    },
-    pursuers: [
+    genre: 'Ação / Survival Horror',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Chris Redfield',
+        image: chrisImg,
+        description:
+          'Veterano da S.T.A.R.S. agora na B.S.A.V., enfrentando o passado em terras africanas.',
+      },
       {
         name: 'Albert Wesker',
         image: weskerImg,
         description:
-          'Antigo líder da S.T.A.R.S., agora um vilão com poderes sobre-humanos e plano de purificação da humanidade.',
+          'Antigo líder da S.T.A.R.S. com poderes sobre-humanos e um plano de purificação.',
       },
     ],
     history: [
@@ -212,6 +230,7 @@ export const games: Game[] = [
       'No meio da missão, Chris reencontra Albert Wesker, seu antigo líder da S.T.A.R.S., que agora é um vilão com poderes sobre-humanos. Wesker revela seu plano: usar o Uroboros para "purificar" a humanidade, exterminando os fracos e dominando o mundo.',
       'Em uma batalha final explosiva, Chris e Sheva conseguem derrotar Wesker e destruir o Uroboros, encerrando mais um capítulo da longa conspiração contra a humanidade.',
     ],
+    scenes: [re5Scene1, re5Scene2, re5Scene3],
   },
   {
     slug: 're6',
@@ -220,18 +239,26 @@ export const games: Game[] = [
     year: 2012,
     tagline: 'A Conspiração Global',
     logo: logoRe6,
-    protagonist: {
-      name: 'Leon S. Kennedy',
-      image: leonImg,
-      description:
-        'Veterano de Raccoon City, agora no centro de uma ameaça biológica global com o C-Vírus.',
-    },
-    pursuers: [
+    genre: 'Ação / Survival Horror',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Leon S. Kennedy',
+        image: leonImg,
+        description:
+          'Veterano de Raccoon City investigando um ataque bioterrorista em Tall Oaks.',
+      },
+      {
+        name: 'Chris Redfield',
+        image: chrisImg,
+        description:
+          'Agente caçando os responsáveis pelo ataque biológico em China.',
+      },
       {
         name: 'Derek Simmons',
         image: simmonsImg,
         description:
-          'Poderoso homem de governo por trás da conspiração e das engrenagens que alimentam o C-Vírus.',
+          'Poderoso homem de governo por trás da conspiração do C-Vírus.',
       },
     ],
     history: [
@@ -240,6 +267,7 @@ export const games: Game[] = [
       'Por trás de tudo está Derek Simmons, um poderoso homem de governo, e suas engrenagens de conspiração. Personagens de todas as gerações da série se cruzam em uma trama que mistura traição, vingança e responsabilidade.',
       'Após confrontos em diversos países e a revelação de toda a conspiração, os protagonistas conseguem impedir o plano de Simmons — mas o custo humano e as perdas pessoais deixam cicatrizes profundas em todos.',
     ],
+    scenes: [re6Scene1, re6Scene2, re6Scene3],
   },
   {
     slug: 're7',
@@ -248,13 +276,15 @@ export const games: Game[] = [
     year: 2017,
     tagline: 'A Família Baker',
     logo: logoRe7,
-    protagonist: {
-      name: 'Ethan Winters',
-      image: ethanImg,
-      description:
-        'Homem comum que viaja até a decadente plantação Baker, na Louisiana, atrás de sua esposa Mia.',
-    },
-    pursuers: [
+    genre: 'Survival Horror (FPS)',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Ethan Winters',
+        image: ethanImg,
+        description:
+          'Homem comum disposto a atravessar o inferno para resgatar sua esposa.',
+      },
       {
         name: 'Jack Baker',
         image: jackImg,
@@ -268,6 +298,7 @@ export const games: Game[] = [
       'Conseguindo resgatar Mia e sobreviver aos horrores da plantação, Ethan descobre um laboratório subterrâneo ligado a uma organização chamada E-Nave e ao projeto "Eveline": uma bioarma em forma de garota capaz de infectar pessoas remotamente com o Mold.',
       'No clímax, Ethan derrota Eveline e escapa com vida — mas a verdade sobre Mia, sobre si mesmo e sobre o poder do Mold ainda guarda uma última surpresa, revelada apenas em seguida.',
     ],
+    scenes: [re7Scene1, re7Scene2, re7Scene3],
   },
   {
     slug: 'village',
@@ -276,13 +307,15 @@ export const games: Game[] = [
     year: 2021,
     tagline: 'A Vila dos Lordes',
     logo: logoVillage,
-    protagonist: {
-      name: 'Ethan Winters',
-      image: ethanImg,
-      description:
-        'Pai que parte atrás da filha Rose, sequestrada por Chris Redfield, e cai em uma vila dominada por horrores.',
-    },
-    pursuers: [
+    genre: 'Survival Horror (FPS)',
+    developer: 'Capcom',
+    cast: [
+      {
+        name: 'Ethan Winters',
+        image: ethanImg,
+        description:
+          'Pai disposto a sacrificar tudo para recuperar sua filha Rose.',
+      },
       {
         name: 'Alcina Dimitrescu',
         image: dimitrescuImg,
@@ -296,5 +329,6 @@ export const games: Game[] = [
       'Durante a caçada, Ethan descobre que Rose é a chave para o poder do Megamycete e enfrenta os lordes um a um, revelando segredos dolorosos sobre o passado de Mia e sobre a própria natureza de sua "existência" desde o incidente em Louisiana.',
       'No desfecho, Ethan se sacrifica para destruir o Megamycete e proteger Rose, encerrando definitivamente a linhagem do mold — e selando sua própria história com um ato de redenção.',
     ],
+    scenes: [villageScene1, villageScene2, villageScene3],
   },
 ]
