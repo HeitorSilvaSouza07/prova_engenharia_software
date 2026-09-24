@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useParams, Navigate, Link } from 'react-router-dom'
-import { games, type Game } from '../data/games'
+import { games, storeLinks, type Game } from '../data/games'
 
 function GameView({ game }: { game: Game }) {
   const [sceneIndex, setSceneIndex] = useState(0)
@@ -85,6 +85,35 @@ function GameView({ game }: { game: Game }) {
               </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="dc-section dc-stores">
+        <h2 className="dc-section-title">ONDE COMPRAR</h2>
+        <div className="store-panel">
+          <div className="store-price">
+            <span className="store-price-label">Preço de referência</span>
+            <span className="store-price-value">{game.price}</span>
+            <span className="store-price-note">
+              Preço cheio na Steam. Em promoções a série chega a −80%.
+            </span>
+          </div>
+          <ul className="store-list">
+            {storeLinks(game).map((store) => (
+              <li key={store.name}>
+                <a
+                  className="store-link"
+                  href={store.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="store-link-name">{store.name}</span>
+                  <span className="store-link-detail">{store.detail}</span>
+                  <span className="store-link-cta">Ver oferta →</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

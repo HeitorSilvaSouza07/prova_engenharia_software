@@ -84,9 +84,40 @@ export interface Game {
   logo: string
   genre: string
   developer: string
+  price: string
+  steamUrl: string
+  storeQuery: string
   cast: Character[]
   history: string[]
   scenes: string[]
+}
+
+export interface StoreLink {
+  name: string
+  url: string
+  detail: string
+}
+
+export const storeLinks = (game: Game): StoreLink[] => {
+  const query = encodeURIComponent(game.storeQuery)
+  return [
+    { name: 'Steam', url: game.steamUrl, detail: 'Jogo base para PC' },
+    {
+      name: 'Nuuvem',
+      url: `https://www.nuuvem.com/search?q=${query}`,
+      detail: 'Código Steam · Brasil',
+    },
+    {
+      name: 'Humble Bundle',
+      url: `https://www.humblebundle.com/store/search?search=${query}`,
+      detail: 'Chave para Steam',
+    },
+    {
+      name: 'Fanatical',
+      url: `https://www.fanatical.com/en/search?search=${query}`,
+      detail: 'Chave para Steam',
+    },
+  ]
 }
 
 export const games: Game[] = [
@@ -99,6 +130,9 @@ export const games: Game[] = [
     logo: logoRe1,
     genre: 'Survival Horror',
     developer: 'Capcom',
+    price: 'R$ 89,00',
+    steamUrl: 'https://store.steampowered.com/app/304240/',
+    storeQuery: 'Resident Evil HD Remaster',
     cast: [
       {
         name: 'Chris Redfield',
@@ -154,6 +188,9 @@ export const games: Game[] = [
     logo: logoRe2,
     genre: 'Survival Horror',
     developer: 'Capcom',
+    price: 'R$ 169,00',
+    steamUrl: 'https://store.steampowered.com/app/883710/',
+    storeQuery: 'Resident Evil 2',
     cast: [
       {
         name: 'Leon S. Kennedy',
@@ -209,6 +246,9 @@ export const games: Game[] = [
     logo: logoRe3,
     genre: 'Survival Horror',
     developer: 'Capcom',
+    price: 'R$ 169,00',
+    steamUrl: 'https://store.steampowered.com/app/952060/',
+    storeQuery: 'Resident Evil 3 Nemesis',
     cast: [
       {
         name: 'Jill Valentine',
@@ -264,6 +304,9 @@ export const games: Game[] = [
     logo: logoRe4,
     genre: 'Survival Horror / Ação',
     developer: 'Capcom',
+    price: 'R$ 89,00',
+    steamUrl: 'https://store.steampowered.com/app/254700/',
+    storeQuery: 'Resident Evil 4 2005',
     cast: [
       {
         name: 'Leon S. Kennedy',
@@ -319,6 +362,9 @@ export const games: Game[] = [
     logo: logoRe5,
     genre: 'Ação / Survival Horror',
     developer: 'Capcom',
+    price: 'R$ 89,00',
+    steamUrl: 'https://store.steampowered.com/app/21690/',
+    storeQuery: 'Resident Evil 5',
     cast: [
       {
         name: 'Chris Redfield',
@@ -368,6 +414,9 @@ export const games: Game[] = [
     logo: logoRe6,
     genre: 'Ação / Survival Horror',
     developer: 'Capcom',
+    price: 'R$ 89,00',
+    steamUrl: 'https://store.steampowered.com/app/221040/',
+    storeQuery: 'Resident Evil 6',
     cast: [
       {
         name: 'Leon S. Kennedy',
@@ -435,6 +484,9 @@ export const games: Game[] = [
     logo: logoRe7,
     genre: 'Survival Horror (FPS)',
     developer: 'Capcom',
+    price: 'R$ 89,00',
+    steamUrl: 'https://store.steampowered.com/app/418370/',
+    storeQuery: 'Resident Evil 7 Biohazard',
     cast: [
       {
         name: 'Ethan Winters',
@@ -490,6 +542,9 @@ export const games: Game[] = [
     logo: logoVillage,
     genre: 'Survival Horror (FPS)',
     developer: 'Capcom',
+    price: 'R$ 169,00',
+    steamUrl: 'https://store.steampowered.com/app/1196590/',
+    storeQuery: 'Resident Evil Village',
     cast: [
       {
         name: 'Ethan Winters',
